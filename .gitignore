@@ -1,0 +1,68 @@
+# ===== Voir https://docs.github.com/get-started/getting-started-with-git/ignoring-files =====
+
+# ===== Build / compilation =====
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# ===== Node =====
+/node_modules
+npm-debug.log
+yarn-error.log
+yarn-error.log*
+package-lock.json   # à commenter si vous voulez le versionner (recommandé)
+# yarn.lock         # à commenter si vous utilisez yarn et voulez le versionner
+
+# ===== IDE et éditeurs =====
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# ===== Divers =====
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# ===== Fichiers système =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Environnements et secrets =====
+# Si vos fichiers environment*.ts contiennent des clés API, mots de passe, etc.,
+# décommentez les lignes suivantes pour les ignorer :
+# src/environments/environment.ts
+# src/environments/environment.prod.ts
+# src/environments/environment.*.ts
+# Et créez des fichiers .example à la place.
+
+# Fichiers .env (si vous en utilisez)
+.env
+.env.local
+.env.*.local
+
+# ===== Autres =====
+*.bak
+*.tmp
+*.swp
+*.swo
